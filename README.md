@@ -1,6 +1,6 @@
 <h1>📊 Microcalc — Calculadora de Ingestão de Microplásticos</h1>
 
-<img width="1234" height="4883" alt="image" src="https://github.com/user-attachments/assets/bc7e54d3-2764-4ccf-a74a-a62c7f7df5df" />
+<img width="1500" height="4883" alt="image" src="https://github.com/user-attachments/assets/bc7e54d3-2764-4ccf-a74a-a62c7f7df5df" />
 
 <p>
 O <strong>Microcalc</strong> é um site responsivo que permite ao usuário estimar sua ingestão diária e semanal de microplásticos com base em hábitos pessoais.
