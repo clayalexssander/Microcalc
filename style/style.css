@@ -1,20 +1,57 @@
-body {
+body 
+{
   background-color: #fff;
   font-family: 'Times New Roman', Times, serif;
 }
-/* Garantir que o título permaneça visível em todas as resoluções */
+
 .bloco-titulo {
-  margin-top: 0; /* Remove a margem negativa que pode estar causando problemas */
-  padding-top: 20px;
+  margin-top: -250px;
 }
 
-/* Ocultar a imagem inicial em telas pequenas */
+#titulo {
+  font-size: clamp(2rem, 5vw + 1rem, 5rem);
+}
+
+#subtitulo1, #subtitulo2, #segundo_subtitulo2, #subtitulo3 {
+  font-size: clamp(1rem, 2vw + .5rem, 1.5rem);
+}
+
+#titulo2, #titulo3 {
+  font-size: clamp(1.8rem, 4vw + 1rem, 3.5rem);
+}
+
+#infos {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+}
+
+.card-plan {
+  transition: transform 0.3s ease;
+}
+
+.card-plan:hover {
+  transform: translateY(-5px);
+}
+
+.progress {
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  font-weight: bold;
+}
+
+.reference-list {
+  font-size: 0.85rem;
+}
+
 @media (max-width: 768px) {
   .col-12.col-md-6.text-center img.img-fluid {
     display: none;
   }
   
-  /* Garantir que o título ocupe toda a largura e seja centralizado */
   .col-12.col-md-6.text-center.text-md-start {
     text-align: center !important;
     width: 100%;
@@ -22,18 +59,24 @@ body {
     max-width: 100%;
   }
   
-  /* Ajustes específicos para o título em mobile */
   #titulo {
-    font-size: 2.5rem; /* Tamanho fixo para mobile */
+    font-size: 2.5rem;
     margin-top: 10px;
   }
   
   #subtitulo1, #subtitulo2 {
     font-size: 1.2rem;
   }
+  
+  .barra-divisoria {
+    display: none !important;
+  }
+  
+  .imagem-inicial {
+    display: none;
+  }
 }
 
-/* Ajuste adicional para telas muito pequenas */
 @media (max-width: 480px) {
   #titulo {
     font-size: 2rem;
@@ -43,58 +86,15 @@ body {
     font-size: 1rem;
   }
 }
-/* Títulos responsivos usando clamp */
-#titulo {
-  font-size: clamp(2rem, 5vw + 1rem, 5rem);
-}
-.bloco-titulo {
-  margin-top: -250px; /* sobe tudo 30px */
-}
-#subtitulo1,
-#subtitulo2,
-#segundo_subtitulo2,
-#subtitulo3 {
-  font-size: clamp(1rem, 2vw + .5rem, 1.5rem);
+
+.calculation-details {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
 }
 
-#titulo2 {
-  font-size: clamp(1.8rem, 4vw + 1rem, 3.5rem);
-}
-
-#titulo3 {
-  font-size: clamp(1.8rem, 4vw + 1rem, 3.5rem);
-  margin: 0 auto;
-}
-
-/* Imagem infos responsiva */
-#infos {
-  width: 100%;
-  max-width: 850px;
-  height: auto;
-}
-
-/* Barra */
-#barra img {
-  max-width: 100%; 
-}
-.col-md-6 img {
-  margin-bottom: 0 !important;
-}
-/* 3. Ocultar a barra divisória em telas pequenas (usando a nova classe) */
-@media (max-width: 768px) {
-  .barra-divisoria {
-    display: none !important;
-  }
-}
-
-/* 4. Ocultar a imagem inicial em telas pequenas */
-@media (max-width: 768px) {
-  .imagem-inicial {
-    display: none;
-  }
-  
-  .col-12.col-md-6.text-center.text-md-start {
-    text-align: center !important;
-    width: 100%;
-  }
+.source-badge {
+  font-size: 0.7rem;
+  cursor: pointer;
 }
