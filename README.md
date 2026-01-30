@@ -1,3 +1,5 @@
+## 🔗 [Acesse o site](https://clayalexssander.github.io/Microcalc/)
+
 <h1>📊 Microcalc — Calculadora de Ingestão de Microplásticos</h1>
 
 <img src="https://github.com/user-attachments/assets/bc7e54d3-2764-4ccf-a74a-a62c7f7df5df" alt="image" style="max-width: 100%; height: auto;" />
